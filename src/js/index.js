@@ -61,7 +61,7 @@ elements.searchForm.addEventListener('submit', e => {
 elements.searchResPages.addEventListener('click', e => {
     const btn = e.target.closest('.btn-inline');
     if (btn) {
-        const goToPage = parseInt(btn.dataset.goto, 10); //to the base 10 for only decimal nos between 0-9
+        const goToPage = parseInt(btn.dataset.goto, 10); //to the base 10 to get a decimal number between 0-9
         searchView.clearResults();
         searchView.renderResults(state.search.result, goToPage);
     }
